@@ -50,10 +50,6 @@ const Home = () => {
                                   </span>
                                 </div>
                               </div>
-                              {/* {
-  stock.beta > 1.7 ? <span className="volatile volatility">Volatile</span>
-  : <span className="stable volatility">Stable</span>
-} */}
                             </NavLink>
                           ) : ''
                         ))

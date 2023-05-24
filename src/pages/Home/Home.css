@@ -33,7 +33,7 @@ body {
 .companyList {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .companyListItem {
@@ -75,10 +75,10 @@ a {
   align-self: flex-end;
 }
 
-/* @media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
   .companyList {
     list-style: none;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
-} */
+}

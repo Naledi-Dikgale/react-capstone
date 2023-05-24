@@ -11,6 +11,7 @@
   margin: 0;
   height: 50px;
   background-color: rgb(248, 98, 175);
+  border: 2px solid rgb(115, 36, 77);
   display: flex;
   align-items: center;
 }
