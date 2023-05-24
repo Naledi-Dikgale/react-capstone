@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(248, 98, 175);
+  opacity: 0.9;
+}
+
+.navbar {
+  max-width: 100%;
+  margin: 0;
+  height: 50px;
+  background-color: rgb(248, 98, 175);
+  border: 2px solid rgb(115, 36, 77);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.searchbar {
+  display: flex;
+  gap: 5px;
+  margin-right: 20px;
+}
+
+.searchbtn {
+  height: 40px;
+  width: 50px;
+  border-radius: 0 20px 20px 0;
+}
+
+.companyList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.companyListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  border: 1px solid rgb(246, 147, 198);
+  box-shadow: 0 0 10px rgb(115, 36, 77);
+  padding: 10px;
+  margin: 10px;
+}
+
+.companyListItem:hover {
+  cursor: pointer;
+  border: 3px solid rgb(248, 98, 175);
+}
+
+a {
+  all: unset;
+  font-weight: bold;
+  color: seashell;
+}
+
+.namePrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  width: 30px;
+  color: #fff;
+}
+
+.price {
+  align-self: flex-end;
+}
+
+/* @media screen and (max-width: 350px) {
+  .companyList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+} */

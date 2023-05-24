@@ -1,0 +1,51 @@
+.details {
+  padding: 30px;
+}
+
+.details h1 {
+  color: white;
+}
+
+.detnav {
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  background-color: rgb(248, 98, 175);
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  justify-content: left;
+  padding: 10px;
+  font-size: x-large;
+}
+
+.infobar {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.infobar span {
+  line-height: 40px;
+}
+
+.infobar:nth-child(even) {
+  background-color: rgb(233, 78, 163);
+}
+
+.infoname {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: seashell;
+}
+
+.infonumeric {
+  font-weight: bolder;
+  font-size: 20px;
+  color: seashell;
+}
