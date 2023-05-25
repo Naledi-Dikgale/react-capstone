@@ -39,7 +39,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [video link]()
+- [video link](https://drive.google.com/file/d/1B7FYJUfedqf-1IU3CgOKWkVfqipkiTLc/view?usp=share_link)
 
 
 - [Live Demo Link](https://stock-market-2xyl.onrender.com)
