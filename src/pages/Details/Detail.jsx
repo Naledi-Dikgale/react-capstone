@@ -2,8 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './Detail.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 
 const Detail = () => {
   const selectedStockId = useSelector((state) => state.stocks.selectedStock);
@@ -14,7 +13,7 @@ const Detail = () => {
 
     <div>
       <nav className="detnav">
-        <NavLink to="/" className="back"><FontAwesomeIcon icon={faArrowLeft} /></NavLink>
+        <NavLink to="/" className="back"><AiOutlineArrowLeft /></NavLink>
       </nav>
       {
                 selectedStockId ? (
