@@ -19,7 +19,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <nav className="navbar">
         <h1>Stocks</h1>
         <div className="searchbar">

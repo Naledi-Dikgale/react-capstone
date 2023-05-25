@@ -1,20 +1,18 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(248, 98, 175);
+  background-color: rgb(231, 79, 157);
   opacity: 0.9;
 }
 
 .navbar {
-  max-width: 100%;
-  margin: 0;
+  width: 100%;
   height: 50px;
-  background-color: rgb(248, 98, 175);
-  border: 2px solid rgb(115, 36, 77);
+  background-color: rgb(238, 31, 138);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 5px;
 }
 
@@ -33,23 +31,25 @@ body {
 .companyList {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .companyListItem {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 120px;
-  border: 1px solid rgb(246, 147, 198);
-  box-shadow: 0 0 10px rgb(115, 36, 77);
-  padding: 10px;
-  margin: 10px;
+  gap: 10px;
+  border-color: transparent;
+}
+
+.companyListItem:nth-child(4n+2),
+.companyListItem:nth-child(4n+3) {
+  background-color: rgb(238, 31, 138);
 }
 
 .companyListItem:hover {
   cursor: pointer;
-  border: 3px solid rgb(248, 98, 175);
+  box-shadow: 0 0 10px rgb(115, 36, 77);
 }
 
 a {
@@ -75,10 +75,17 @@ a {
   align-self: flex-end;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 600px) {
   .companyList {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    max-width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
   }
 }

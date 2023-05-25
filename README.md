@@ -4,6 +4,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+   - [🚀 Live Demo](#live-demo)
     - [Video Walkthrough](#video-walkthrough)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -34,6 +35,14 @@
 ### Key Features <a name="key-features"></a>
 
 - **Project setup with Create React App**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+- [video link]()
+
+
+- [Live Demo Link](https://stock-market-2xyl.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
