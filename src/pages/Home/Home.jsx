@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import { BsArrowRightCircle, BsFillSearchHeartFill } from 'react-icons/bs';
+import { BsFillSearchHeartFill } from 'react-icons/bs';
 import { fetchStocks, select, search } from './homeSlice';
 
 const Home = () => {
@@ -40,7 +40,6 @@ const Home = () => {
                           stock.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ? (
                             <NavLink to="/details" onClick={() => dispatch(select(stock.id))} key={stock.id} className="companyListItem">
                               <div className="namePrice">
-                                <BsArrowRightCircle className="arrow" />
                                 <div className="bottom">
                                   <h3>{stock.companyName}</h3>
                                   <span className="price">

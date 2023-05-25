@@ -1,91 +1,68 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  background-color: rgb(231, 79, 157);
-  opacity: 0.9;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.App {
+  background-color: #d24379;
+  min-height: 100vh;
 }
 
 .navbar {
-  width: 100%;
-  height: 50px;
-  background-color: rgb(238, 31, 138);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 5px;
+}
+
+.navbar h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  margin: 10px;
 }
 
 .searchbar {
   display: flex;
-  gap: 5px;
-  margin-right: 20px;
-}
-
-.searchbtn {
-  height: 40px;
-  width: 50px;
-  border-radius: 0 20px 20px 0;
+  gap: 10px;
 }
 
 .companyList {
-  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 20px 0 0 0;
 }
 
 .companyListItem {
+  min-height: 150px;
+  background-color: #d24379;
   display: flex;
-  align-items: center;
-  height: 120px;
-  gap: 10px;
-  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.namePrice {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.bottom {
+  text-decoration: none;
 }
 
 .companyListItem:nth-child(4n+2),
 .companyListItem:nth-child(4n+3) {
-  background-color: rgb(238, 31, 138);
-}
-
-.companyListItem:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px rgb(115, 36, 77);
-}
-
-a {
-  all: unset;
-  font-weight: bold;
-  color: seashell;
-}
-
-.namePrice {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 100%;
-  width: 100%;
-}
-
-.arrow {
-  width: 30px;
-  color: #fff;
+  background-color: #eb4b89;
 }
 
 .price {
   align-self: flex-end;
-}
-
-@media screen and (min-width: 600px) {
-  .companyList {
-    list-style: none;
-    display: grid;
-
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    max-width: 100%;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
 }
