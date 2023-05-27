@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import { BsFillSearchHeartFill } from 'react-icons/bs';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { fetchStocks, select, search } from './homeSlice';
 
 const Home = () => {
@@ -23,16 +23,19 @@ const Home = () => {
       <nav className="navbar">
         <h1>Stocks</h1>
         <div className="searchbar">
-          <input onChange={(event) => dispatch(search(event.target.value))} type="text" />
-          <button type="submit">Submit</button>
+          <input className="search" onChange={(event) => dispatch(search(event.target.value))} type="text" />
+          {/* <button type="submit">Submit</button>
 
           <button className="searchbtn" type="button" aria-label="Search">
             <BsFillSearchHeartFill />
-          </button>
+          </button> */}
 
         </div>
 
       </nav>
+      <div className="header">
+        <p>coins</p>
+      </div>
       <ul className="companyList">
         {
                         stocks.map((stock) => (
@@ -41,7 +44,11 @@ const Home = () => {
                             <NavLink to="/details" onClick={() => dispatch(select(stock.id))} key={stock.id} className="companyListItem">
                               <div className="namePrice">
                                 <div className="bottom">
-                                  <h3>{stock.companyName}</h3>
+                                  <span className="arrow">
+                                    {BsArrowRightCircle > 0 ? <BsArrowRightCircle className="arrow" /> : <BsArrowRightCircle className="arrow" />}
+
+                                  </span>
+                                  <h3 className="campany">{stock.companyName}</h3>
                                   <span className="price">
                                     Price: $
                                     {stock.price}

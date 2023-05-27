@@ -31,19 +31,35 @@
   gap: 10px;
 }
 
+.search {
+  height: 4vh;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.header {
+  width: 100%;
+  height: 9vh;
+  background-image: url('../../../public/coins.jpg');
+  background-size: cover;
+}
+
 .companyList {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px 0 0 0;
+  width: 100vw;
 }
 
 .companyListItem {
   min-height: 150px;
-  background-color: #d24379;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  background-image: radial-gradient(circle, #cd6b91, #d24379, transparent);
 }
 
 .namePrice {
@@ -54,8 +70,24 @@
   margin-left: 10px;
 }
 
+.namePrice:hover {
+  padding: 1rem;
+}
+
 .bottom {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.campany {
+  align-self: flex-end;
+  padding-top: 2rem;
+}
+
+.arrow {
+  align-self: end;
 }
 
 .companyListItem:nth-child(4n+2),

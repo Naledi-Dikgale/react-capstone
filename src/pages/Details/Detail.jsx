@@ -18,26 +18,33 @@ const Detail = () => {
       {
                 selectedStockId ? (
                   <div className="details">
-                    <h1>{stock.companyName}</h1>
-                    <div className="infobar">
-                      <span className="infoname">Price  </span>
-                      <span className="infonumeric">{stock.price}</span>
+                    <div className="detHeader">
+                      <h1>{stock.companyName}</h1>
                     </div>
-                    <div className="infobar">
-                      <span className="infoname">Volume  </span>
-                      <span className="infonumeric">{stock.volume}</span>
+                    <div className="financial">
+                      <p className="detdesc">Company financial information</p>
                     </div>
-                    <div className="infobar">
-                      <span className="infoname">Beta  </span>
-                      <span className="infonumeric">{stock.beta}</span>
-                    </div>
-                    <div className="infobar">
-                      <span className="infoname">Dividend  </span>
-                      <span className="infonumeric">{stock.lad}</span>
-                    </div>
-                    <div className="infobar">
-                      <span className="infoname">Market Cap  </span>
-                      <span className="infonumeric">{stock.marketCap}</span>
+                    <div className="barContainer">
+                      <div className="infobar">
+                        <span className="infoname">Price  </span>
+                        <span className="infonumeric">{stock.price}</span>
+                      </div>
+                      <div className="infobar">
+                        <span className="infoname">Volume  </span>
+                        <span className="infonumeric">{stock.volume}</span>
+                      </div>
+                      <div className="infobar">
+                        <span className="infoname">Beta  </span>
+                        <span className="infonumeric">{stock.beta}</span>
+                      </div>
+                      <div className="infobar">
+                        <span className="infoname">Dividend  </span>
+                        <span className="infonumeric">{stock.lad}</span>
+                      </div>
+                      <div className="infobar">
+                        <span className="infoname">Market Cap  </span>
+                        <span className="infonumeric">{stock.marketCap}</span>
+                      </div>
                     </div>
                   </div>
                 ) : <div>Data not loaded </div>
