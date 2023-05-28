@@ -44,6 +44,12 @@
   background-size: cover;
 }
 
+.header p {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(241, 241, 225);
+}
+
 .companyList {
   display: flex;
   flex-wrap: wrap;

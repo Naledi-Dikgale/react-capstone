@@ -34,7 +34,7 @@ const Home = () => {
 
       </nav>
       <div className="header">
-        <p>coins</p>
+        <p>$$$</p>
       </div>
       <ul className="companyList">
         {
