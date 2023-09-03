@@ -32,7 +32,7 @@
 }
 
 .search {
-  height: 4vh;
+  height: 6vh;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
@@ -42,6 +42,12 @@
   height: 9vh;
   background-image: url('../../../public/coins.jpg');
   background-size: cover;
+}
+
+.header p {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(241, 241, 225);
 }
 
 .companyList {
