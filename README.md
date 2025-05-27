@@ -5,7 +5,6 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
    - [🚀 Live Demo](#live-demo)
-    - [Video Walkthrough](#video-walkthrough)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
